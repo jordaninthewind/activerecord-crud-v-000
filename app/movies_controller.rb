@@ -30,7 +30,7 @@ def can_be_created_in_a_block # This makes no sense with the tests as they are w
 end
 
 def can_get_the_first_item_in_the_database
-  movie = Movies.find(1)
+  Movies.find(1)
 end
 
 def can_get_the_last_item_in_the_database
