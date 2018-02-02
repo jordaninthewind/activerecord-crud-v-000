@@ -23,7 +23,7 @@ def can_be_created_with_a_hash_of_attributes
 
   attributes.each do |el|
     binding.pry
-    movie.el = attributes[el]
+    movie.el[0] = el[1]
   end
 end
 
