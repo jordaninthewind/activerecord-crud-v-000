@@ -1,3 +1,4 @@
+require 'pry'
 # Replace the '__' in the below methods to to make the specs pass!
 # Each '__' corresponds to a single line of code you will need to write.
 # See the example below on the left and how it should look on the right.
@@ -53,7 +54,7 @@ def can_find_by_multiple_attributes
 end
 
 def can_find_using_where_clause_and_be_sorted
-  # For this test return all movies released after 2002 and ordered by 
+  # For this test return all movies released after 2002 and ordered by
   # release date descending
   __
 end
@@ -93,11 +94,3 @@ def can_destroy_all_items_at_once
   end
   __
 end
-
-
-
-
-
-
-
-
