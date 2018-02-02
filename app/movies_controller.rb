@@ -21,9 +21,10 @@ def can_be_created_with_a_hash_of_attributes
   }
   movie = Movie.new
 
-  attributes.each do |el|
+  return_movie = attributes.each do |el|
     movie.el[0] = el[1]
   end
+  return_movie
 end
 
 def can_be_created_in_a_block
