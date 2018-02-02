@@ -25,7 +25,7 @@ end
 def can_be_created_in_a_block
   Movie.create do |m|
     # binding.pry
-    m.title = title
+    m.title = "Home Alone"
     m.release_date = year
   end
 end
