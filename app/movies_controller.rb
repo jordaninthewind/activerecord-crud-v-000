@@ -21,7 +21,7 @@ def can_be_created_with_a_hash_of_attributes
   }
   movie = Movie.new
 
-  attributes.keys.tap do |el|
+  attributes.tap do |el|
     movie.el = attributes[el]
   end
 end
