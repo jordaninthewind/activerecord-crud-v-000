@@ -20,8 +20,9 @@ def can_be_created_with_a_hash_of_attributes
       in_theaters: false
   }
   movie = Movie.new
-  binding.pry
-  attributes.each do |el|
+
+  attributes.keys.each do |el|
+    binding.pry
     movie.el = attributes[el]
   end
   movie
