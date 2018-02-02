@@ -22,6 +22,7 @@ def can_be_created_with_a_hash_of_attributes
   movie = Movie.new
 
   attributes.tap do |el|
+    binding.pry
     movie.el = attributes[el]
   end
 end
