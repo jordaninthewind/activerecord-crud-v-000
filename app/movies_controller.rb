@@ -30,9 +30,9 @@ def can_be_created_in_a_block # This makes no sense with the tests as they are w
 end
 
 def can_get_the_first_item_in_the_database
-  movie = Movie.find(1).title
+  movie = Movie.find(1)
   binding.pry
-  movie
+  movie.title
 end
 
 def can_get_the_last_item_in_the_database
