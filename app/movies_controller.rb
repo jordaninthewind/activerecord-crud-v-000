@@ -6,6 +6,7 @@
 # end                              # end
 
 def can_be_instantiated_and_then_saved
+  binding.pry
   movie = __
   movie.title = "This is a title."
   __
