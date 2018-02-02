@@ -19,7 +19,8 @@ def can_be_created_with_a_hash_of_attributes
       lead: "Paul Newman",
       in_theaters: false
   }
-  movie = attributes.each do |el|
+  movie = Movie.new
+  attributes.each do |el|
     movie.el = attributes[el]
   end
   movie
