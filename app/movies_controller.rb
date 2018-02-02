@@ -22,7 +22,7 @@ def can_be_created_with_a_hash_of_attributes
   movie = Movie.create(attributes)
 end
 
-def can_be_created_in_a_block # This makes no sense with the tests as they are written
+def can_be_created_in_a_block # This makes no sense with the tests as they are written.
   Movie.create(attributes) do |m|
     m.title = "Home Alone"
     m.release_date = 1990
@@ -30,7 +30,7 @@ def can_be_created_in_a_block # This makes no sense with the tests as they are w
 end
 
 def can_get_the_first_item_in_the_database
-  __
+  movie = Movies.find(1)
 end
 
 def can_get_the_last_item_in_the_database
